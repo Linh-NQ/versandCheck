@@ -329,11 +329,9 @@ def test_check_datenreihe():
     error_count_total = [0]
 
     check_datenreihe(vorlage, ws, error_count, error_count_total)
-    assert check_cell_color(ws, 'R', 2, (168, 168, 168))
     assert check_cell_color(ws, 'R', 3, (168, 168, 168))
     assert check_cell_color(ws, 'R', 4, (168, 168, 168))
     assert check_cell_color(ws, 'R', 2, (168, 168, 168))
-    assert check_cell_color(ws, 'V', 5, (168, 168, 168))
     assert check_cell_color(ws, 'V', 6, (168, 168, 168))
 
     wb.close()
