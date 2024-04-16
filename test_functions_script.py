@@ -353,6 +353,7 @@ def test_check_versandgrund():
 
     check_versandgrund(vorlage, ws, error_count, error_count_total)
     assert check_cell_color(ws, 'R', 5, (220, 20, 60))
+    assert check_cell_color(ws, 'R', 8, (220, 20, 60))
     assert check_cell_color(ws, 'R', 11, (220, 20, 60))
     assert check_cell_color(ws, 'R', 12, (220, 20, 60))
     assert check_cell_color(ws, 'S', 7, (220, 20, 60))
